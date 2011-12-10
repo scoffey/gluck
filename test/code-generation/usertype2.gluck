@@ -1,0 +1,11 @@
+pair: type{
+	x: int,
+	y: int
+}
+
+
+start:function {
+	var: pair;
+	var{x} = 1;
+	var{y} = 2;
+}

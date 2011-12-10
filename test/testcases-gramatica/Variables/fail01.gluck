@@ -1,0 +1,9 @@
+/*
+ * Declaracion simple de variables con error.
+ * No se define el tipo de dato de las variables.
+ */
+start: function {
+	var1;
+	var2;
+	var3
+}

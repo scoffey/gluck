@@ -1,0 +1,17 @@
+start:function {
+	i:int;
+	j:int;
+	n:int = 1;
+	m:int = 2;
+	b:int = 3;
+ 	i = m - 1;
+	j = n;
+	a:int = -1;
+	while a < 0 loop {
+		i = i + 1;
+		j = j - 1;
+		a = 2;
+	}
+	i = 3;
+	b = j - 1;
+}

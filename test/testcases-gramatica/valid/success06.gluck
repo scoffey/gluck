@@ -1,0 +1,57 @@
+/* Testeos de tipos definidos por el usuario */
+
+treeT: type {
+	value_int: int, 
+	leftTree: treeT,
+	rightTree: treeT
+}
+
+treeListT: type {
+	head: treeT,
+	tail: treeListT
+}
+
+func1: function -> ret: treeT {
+}
+
+func2: function -> ret: treeT[] {
+}
+
+func3: function tree: treeT {
+	int1: int = tree{int_value};
+}
+
+func4: function int1:int {
+}
+
+point2d: type {
+	x: int,
+	y: int
+}
+
+func5: function -> int1: int, int2: int {
+	p: point2d;
+	
+	p{x, y} = {int1, int2};
+}
+
+start: function {
+	treeArray: tree[];
+	tree1: tree;
+	tree2: tree;
+	tree3: tree;
+	
+	/* Funciones que devuelven tipos definidos por el usuario */
+	{tree1, tree2, tree3} = func2();
+	{tree1, tree2, tree3} = {func1(), func1(), func1()};
+	treeArray = func2();
+	
+	/* Funciones que reciben tipos definidos por el usuario o campos de dichos tipos */
+	func3(tree1);
+	func4(tree1{int_value});
+	
+	p: point2d;
+	p{x, y} = func5();
+	{p{x}, p{y}} = func5();
+	
+} 

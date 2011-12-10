@@ -1,0 +1,45 @@
+/* Testeos de restricciones */
+
+/* Definicion de constraints */
+positive: constraint x:int { x > 0 }
+pair: constraint x:int { x % 2 == 0 }
+natural: constraint {x >= 0 }
+greaterThan:constraint x:int,  y:int { x > y }
+withinList: constraint x: mytype, validItems: mytype[], allowEmpty: bool { (x == null and allowEmpty) or isInList(x, validItems) }
+
+/* Constraints en variables */
+func: function {
+	int1: int positive;
+	real1: real positive;
+}
+
+/* Constraints dentro de parametros de funciones */
+func2: function in1: int positive {
+}
+
+func3: function -> ticks: int positive {
+}
+
+func3: function in1:int natural -> out1: int natural pair {
+   out1 = in1 * 2;
+}
+
+func4: function in1: int, in2: int greaterThan(in1) {
+
+}
+
+func5: function x: mytype, list: mytype[] -> result:bool {
+	result = true;
+}
+
+
+/* Constraints en campos de estructuras */
+type1: type {
+	x: int positive pair natural, 
+	y: real positive
+}
+
+type1: type {
+	x: int positive, 
+	y: int graterThan(x)
+}

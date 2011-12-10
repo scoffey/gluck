@@ -1,0 +1,5 @@
+f3: function 	p1:int, 				
+				->
+				o1:int {
+	var1: int;
+}

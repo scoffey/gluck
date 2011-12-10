@@ -1,0 +1,9 @@
+/*
+ * Declaracion simple de variables sin error.
+ * Los nombres de las variables poseen el caracter especial '_'
+ */
+start: function {
+	var_1: int;
+	var_2: bool;
+	var_3_: string;
+}

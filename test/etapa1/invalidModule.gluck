@@ -1,0 +1,7 @@
+
+/* 
+ * Ejemplo de recuperación de errores sintácticos para el caso
+ * de una instrucción use inválida.
+ */
+
+use 2;

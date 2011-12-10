@@ -1,0 +1,59 @@
+location varios;
+
+start:function{
+	contador:int=0;
+
+	while contador < 10 loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifnever {
+		contador = -1;
+	}
+	ifquit {
+		contador = -2;
+	}
+
+	while contador < 10 loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifnever {
+		contador = -1;
+	}
+
+	while contador < 10 loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifquit {
+		contador = -2;
+	}
+
+	while contador < 10 loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+
+	until contador == 10 loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifnever {
+		contador = -1;
+	}
+	ifquit {
+		contador = -2;
+	}
+
+}

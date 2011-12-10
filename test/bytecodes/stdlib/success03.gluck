@@ -1,0 +1,8 @@
+location stdlib;
+
+use system.io;
+
+start:function {
+	print(strlen("hola"));
+	print(strlen("mundo"));
+}

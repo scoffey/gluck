@@ -1,0 +1,9 @@
+location stdlib;
+use system.io;
+
+start:function {
+	handler: int = open("stdlib/success01.data");
+	print(readLine(handler));
+	print(readLine(handler));
+	close(handler);
+}

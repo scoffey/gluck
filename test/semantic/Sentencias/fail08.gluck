@@ -1,0 +1,4 @@
+start:function {
+	a: string[10]; 
+	a{5,6} = { "s", "d", "dd" }; // error, dado que los tamaños son distintos. 
+}

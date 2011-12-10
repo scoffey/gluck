@@ -1,0 +1,29 @@
+bst:type {
+	value:int,
+	left:bst,
+	right:bst
+}
+
+list:type {
+	head:int,
+	tail:list
+}
+
+node:type {
+	label:string,
+	tag:int,
+	tail:node
+}
+
+start:function {
+	tree:bst;
+	left:bst;
+	right:bst;
+	left{value, left, right} = {1, null, null};
+	right{value, left, right} = {3, null, null};
+	tree{value, left, right} = {2, left, right};
+	numbers:list;
+	rest:list;
+	rest{head, tail} = {2, null}; 
+	numbers{head, tail} = {1, rest};
+}

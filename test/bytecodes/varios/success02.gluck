@@ -1,0 +1,46 @@
+location varios;
+
+start:function{
+	arreglo:int[] = {1,2};
+	contador:int=0;
+	
+	for ID in arreglo loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifnever {
+		contador = -1;
+	}
+	ifquit {
+		contador = -2;
+	}
+
+	for ID in arreglo loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifnever {
+		contador = -1;
+	}
+
+	for ID in arreglo loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+	ifquit {
+		contador = -2;
+	}
+
+	for ID in arreglo loop {
+		contador = contador + 1;
+		if contador == 5 then {
+			quit;
+		}
+	}
+}

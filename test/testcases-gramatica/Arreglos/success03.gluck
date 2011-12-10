@@ -1,0 +1,3 @@
+start:function{
+a:int[1+lee()];
+}

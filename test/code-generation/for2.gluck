@@ -1,0 +1,13 @@
+use system.io;
+
+foo:function {
+	
+	for var in {2, 4, 6, 8, 10} loop {
+		print(var *  2);
+	}
+	ifnever {
+		print("Nunca entre");
+	}
+	
+	print("Fin");
+}

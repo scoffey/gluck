@@ -1,0 +1,10 @@
+/*
+ * Las restricciones no se pueden definir dentro de una funcion
+ */
+ 
+fn:function in:int {
+	positive:constraint x:int { x > 0 }
+	b:int;
+	b=in;
+	b=-5; 
+}

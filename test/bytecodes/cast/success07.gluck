@@ -1,0 +1,39 @@
+location cast;
+use system.io;
+
+person:type {
+	name:string,
+	age:string,
+	height:real,
+	gender:bool
+}
+
+start:function {
+	p1:person;
+	p2:person;
+	
+	p1{name} = "Pepe";
+	p1{age} = 30;
+	p1{height} = 1.7;
+	p1{gender} = true;
+
+	print(p1{name});
+	print(p1{age});
+	print(p1{height});
+	print(p1{gender});	
+
+	p2{name, age, height, gender} = {"Lala", 40, 1.6, false};
+	
+	print(p2{name});
+	print(p2{age});
+	print(p2{height});
+	print(p2{gender});	
+	
+	p1 = p2;
+
+	print(p1{name});
+	print(p1{age});
+	print(p1{height});
+	print(p1{gender});	
+	
+}

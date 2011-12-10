@@ -1,0 +1,22 @@
+/* Testeo de variables*/
+use system.io;
+
+/* Variables globales */
+id1: int;
+id2: bool;
+id3_: real;
+i_d4: string;
+
+start:function{
+	/* Declaracion de variables */
+	id1: int;
+	id2: bool;
+	id3_: real;
+	i_d4: string;
+
+	/* Declaracion e inicializacion con constantes */
+	ID1: int[] constraint1 constraint2 = 3;
+	ID2: bool constraint1 = true;
+	ID3_: real[] = -2.3;
+	I_D4: string = "hola mundo";
+}

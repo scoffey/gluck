@@ -1,0 +1,7 @@
+location import;
+
+use import.constraints.constraints_only_obj;
+
+start:function {
+	a:int positive = -2;
+}

@@ -1,0 +1,13 @@
+start:function {
+		x:int;
+		y:int;
+		z:int;
+		w:int;
+		x = 1 + 2;
+		if x == 3 then {
+			y = 2 + 1;
+		} else {
+			z = 1 + 2;
+		}
+		w = 3 + 1;
+}

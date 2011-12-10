@@ -1,0 +1,12 @@
+/* Testeo basico de expresiones */
+
+start: function{
+	int1: int = 2 ;
+	int_vec1: int[] = {1, 2, 3, 4};
+	bool_vec1: bool[] constraint1 = bool_vec_function();
+	int2: int = 2*3+(4-2.0/ real_func()) % 2;
+	bool1: bool = !(true and bool_func() or (2 == 2.0 and 3 >= 5.5));
+	bool2: bool[] = {true, false, true and true, !false, bool_func() < bool_func(), false != bool_func() or 3 != 4.5};
+	v3: real = 3.3 * real_func();
+	v4: string = upper("hola mundo");
+}

@@ -1,0 +1,7 @@
+
+start:function{
+	a: int = 1;
+	while a < 10 loop{
+		b:int = a;
+	}
+}

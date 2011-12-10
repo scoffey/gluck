@@ -1,0 +1,5 @@
+/*
+ * Declaracion de funciones con error.
+ */
+
+f1: function;

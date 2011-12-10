@@ -1,0 +1,30 @@
+location varios;
+
+positive: constraint x:int { x >= 0 }
+anyOf: constraint x:int, list:int[] { isInList(x, list) }
+
+isInList: function elem:int, list:int[] -> res:bool {
+   res = false;
+   for item in list loop {
+      if item == elem then {
+         res = true;
+	 quit;
+      }
+   }
+}
+
+start:function {
+}
+
+authorize: function action:string, status:int positive anyOf({1, 2, 3}) -> newStatus: int positive anyOf({2, 1}) {
+    if status == 1 then {
+        newStatus=2;
+    }
+    elseif status == 2 then {
+	newStatus = 1;
+    }
+    else {
+        status = 0; // triggers an error!
+    }
+}
+

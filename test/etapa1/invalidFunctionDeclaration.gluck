@@ -1,0 +1,14 @@
+
+/* 
+ * Ejemplo de recuperación de errores sintácticos para el caso
+ * de una declaración de función inválida. En este caso myfunc
+ * indica que tiene parámetros de salida pero no se los especifica. 
+ */
+
+start: function {
+	num: int = 13;
+}
+
+myfunc: function -> {
+
+}

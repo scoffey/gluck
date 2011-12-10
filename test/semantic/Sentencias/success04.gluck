@@ -1,0 +1,19 @@
+location Sentencias;
+use system.io;
+
+start:function {
+
+	a:int[][];
+	
+	a[0] = {1, 2, 3};
+	a[1] = {4, 5, 6, 7};
+	a[2] = {8, 9};
+	
+	for x in a loop {
+		for y in x loop {
+			print("El numero es ");
+			print(y);
+		}
+	}
+	
+}

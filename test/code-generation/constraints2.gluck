@@ -1,0 +1,14 @@
+
+start:function {
+	a:int;
+	b:int greaterThan(a);
+
+	a = 90;
+	b = 100;
+}
+
+
+greaterThan:constraint x:int, y:int {
+	x > y
+}
+

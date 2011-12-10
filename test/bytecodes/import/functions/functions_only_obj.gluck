@@ -1,0 +1,5 @@
+location import.functions;
+
+fn1: function -> salida: int[]{
+	salida = {1, 2, 3};
+}

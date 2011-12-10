@@ -1,0 +1,6 @@
+/*
+ * Archivo de prueba para las dependencias.
+ * Se hace referencias transitivas entre archivos
+ */
+location dir2;
+use dir2.success03;

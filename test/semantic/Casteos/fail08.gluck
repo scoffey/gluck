@@ -1,0 +1,14 @@
+person:type {
+	name:string,
+	age:int
+}
+
+start:function {
+	p:person;
+	a:int;
+	
+	p{name} = "Pepe";
+	p{age} = 30;
+	
+	a = p;
+}

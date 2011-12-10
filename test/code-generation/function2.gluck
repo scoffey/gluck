@@ -1,0 +1,15 @@
+
+
+start:function {
+	a:int;
+
+	a = 5 + fn2(fn1(40) + 30);
+}
+
+
+fn2:function x:real -> out1:real {
+	out1 = x*2;
+}
+fn1:function in1:int -> out1:int {
+	out1 = in1;
+}

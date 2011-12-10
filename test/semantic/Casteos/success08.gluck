@@ -1,0 +1,21 @@
+person:type {
+	name:string,
+	age:string,
+	height:real,
+	gender:bool
+}
+
+start:function {
+	p:person;
+	
+	p{name} = "Pepe";
+	p{age} = 30;
+	p{height} = 1.7;
+	p{gender} = true;
+	
+	f1(p);
+}
+
+f1:function p:person -> q:person {
+	q = p;
+}

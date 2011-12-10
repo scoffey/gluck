@@ -1,0 +1,4 @@
+
+start:function {
+	a:bool = 10.5;
+}

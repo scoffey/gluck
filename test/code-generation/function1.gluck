@@ -1,0 +1,8 @@
+
+start:function {
+	a:int = fn();
+}
+
+fn:function -> out1:real {
+	out1 = 10.0;
+}

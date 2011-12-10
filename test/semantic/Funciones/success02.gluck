@@ -1,0 +1,31 @@
+
+location Casteos;
+use system.io;
+
+start:function {
+	a:int = func3();
+	
+	func1();
+	func2(10.5 + a);
+	func3();
+	func4(func3());
+}
+
+
+func1:function {
+	print("Hola");	
+}
+
+func2:function i1:int {
+	func1();
+	print(i1);
+}
+
+func3:function -> o1:int {
+	o1 = 10;
+}
+
+func4:function i1:int -> o1:int {
+	func2(i1);
+	o1 = func3() *i1;
+}

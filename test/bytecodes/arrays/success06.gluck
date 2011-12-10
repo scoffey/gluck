@@ -1,0 +1,19 @@
+location arrays;
+use system.io;
+
+start:function {
+	ones:int[][];
+	ones[0][0] = 0;
+	ones[0][1] = 1;
+	ones[0][2] = 2;
+	ones[1][0] = 3;
+	ones[1][1] = 4;
+	ones[1][2] = 5;
+	print(ones[0][0]);
+	print(ones[0][1]);
+	print(ones[0][2]);
+	print(ones[1][0]);
+	print(ones[1][1]);
+	print(ones[1][2]);
+}
+

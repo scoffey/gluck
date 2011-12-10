@@ -1,0 +1,45 @@
+
+/* Ejemplo de recuperacion de errores. Este archivo contiene varios errores lexicos y
+ * sintacticos, para mostrar como se recupera de los mismos. */
+
+
+
+/* Esto debe arrojar un error lexico por el identificador invalido, pero
+ * sintacticamente no es un problema. */
+
+use _identificador_invalido.otro.otro_mas;
+
+/* Este for no puede estar en el contexto global, debe estar si o si dentro
+ * de una funcion.
+ */
+for var in {1, 2, 3, 4} loop {
+	another: int = 0;
+	int = int + var;	
+}
+
+start: function {
+	
+	/* Error sintactico: falta cerrar el parentesis de la
+	 * condicion. */
+
+	if (condition {
+		
+		/* Error sintactico: no es una expresion valida. */
+		testVar = testVar + + 10;		
+	}
+
+}
+
+
+/* Esta no es una declaracion valida de funcion. */
+
+myfunc: function -> {
+
+	/* Esto es un error lexico, ya que los identificadores no 
+	 * pueden comenzar con _  */
+	_myvar: int;
+
+	/* Este es un error lexico porque 10h no es un entero valido. */
+	anotherVar: int = 10h;	
+
+}

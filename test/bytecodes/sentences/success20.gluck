@@ -1,0 +1,25 @@
+location sentences;
+use system.io;
+
+start:function {
+	foo();
+}
+
+foo:function {
+
+	a:int = 10;
+	
+	until a == 0 loop {
+		print("vuelta");
+		quit if a % 4 == 0;
+		a = a - 1;
+	}
+	ifnever {
+		print("never");
+	}
+	ifquit {
+		print("quit");
+	}
+
+	print("End");
+}

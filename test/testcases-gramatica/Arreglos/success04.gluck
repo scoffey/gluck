@@ -1,0 +1,3 @@
+start:function{
+a[numero]=0;
+}

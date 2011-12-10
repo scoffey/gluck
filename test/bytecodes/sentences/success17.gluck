@@ -1,0 +1,14 @@
+location sentences;
+use system.io;
+
+start:function {
+
+	a:int = 5;
+	
+	while a > 0 loop {
+		a = a - 1;
+		print("vuelta");
+	}
+
+	print("End");
+}

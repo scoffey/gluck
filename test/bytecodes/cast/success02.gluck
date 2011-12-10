@@ -1,0 +1,16 @@
+location cast;
+use system.io;
+
+start: function {
+	var1: int = 0;
+	var2: bool = true;
+	var3: real = 3.14159;
+	var4: string = "Hello World";
+	
+	var5: int = var1 + var3;
+	print(var1);
+	print(var2);
+	print(var3);
+	print(var4);
+	print(var5);
+}

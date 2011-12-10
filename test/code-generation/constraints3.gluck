@@ -1,0 +1,23 @@
+
+glo:real = 10;
+
+test:type {
+	var1:int positive,
+	var2:real greaterThan(glo)
+}
+
+start:function {
+	a:test;
+
+	a{var1, var2}  = {10, 20};
+}
+
+
+positive:constraint x:int {
+	x > 0
+}
+
+greaterThan:constraint x:int, y:int {
+	x > y
+}
+

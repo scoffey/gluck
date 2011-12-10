@@ -1,0 +1,6 @@
+/*
+ * Declaracion de funciones sin error.
+ */
+
+f1: function {
+}

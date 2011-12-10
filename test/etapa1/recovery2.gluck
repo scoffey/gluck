@@ -1,0 +1,22 @@
+
+/* Otro ejemplo de recuperacion de errores varios. */
+
+
+/* Error sintactico: uso invalido de la instruccion use */
+use module + 2;
+
+
+start: function {
+
+	i: int = 0 + a;
+
+	/* En este while no esta la palabra clave loop. */
+	while hola {
+		
+		/* Esto NO es un error, porque los tipos se van a verificar a nivel semantico. */
+		i = 10 + false;
+
+		/* Esto es un error sintactico, porque i+2 no es un lvalue */
+		i + 2 = 10;
+	}
+}

@@ -1,0 +1,72 @@
+<project name="Gluck" default="all" basedir=".">
+
+	<property name="src" value="src" />
+	<property name="resources" value="resources" />
+	<property name="bin" value="bin" />
+	<property name="lib" value="lib" />
+
+	<target name="all" depends="clean, compile, dist" />
+
+	<target name="lexer">
+		<java dir="${resources}" jar="${lib}/JFlex.jar" fork="true" failonerror="true" maxmemory="128m">
+			<arg value="gluck.flex" />
+		</java>
+		<move file="${resources}/GluckLexer.java" tofile="${src}/ar/edu/itba/dcc/tp/lexer/GluckLexer.java" />
+	</target>
+
+	<target name="parser">
+		<exec dir="${lib}" executable="bash" os="Linux">
+			<arg line="-c" />
+			<arg value="./yacc.linux -v -Jclass=GluckParser -Jsemantic=Object -Jvalue=Object -Jnorun -Jpackage=ar.edu.itba.dcc.tp.parser -Jextends=ParserAdapter ../resources/gluck.y" />
+		</exec>
+		<exec dir="${lib}" executable="bash" os="Mac OS X">
+			<arg line="-c" />
+			<arg value="./yacc.macosx -v -Jclass=GluckParser -Jsemantic=Object -Jvalue=Object -Jnorun -Jpackage=ar.edu.itba.dcc.tp.parser -Jextends=ParserAdapter ../resources/gluck.y" />
+		</exec>
+		<exec dir="${lib}" executable="cmd.exe" os="Windows XP">
+			<arg line="/c yacc.exe -v -Jclass=GluckParser -Jsemantic=Object -Jvalue=Object -Jnorun -Jpackage=ar.edu.itba.dcc.tp.parser -Jextends=ParserAdapter ../resources/gluck.y" />
+		</exec>
+		<exec dir="${lib}" executable="cmd.exe" os="Windows Vista">
+			<arg line="/c yacc.exe -v -Jclass=GluckParser -Jsemantic=Object -Jvalue=Object -Jnorun -Jpackage=ar.edu.itba.dcc.tp.parser -Jextends=ParserAdapter ../resources/gluck.y" />
+		</exec>
+		<move file="${lib}/GluckParser.java" todir="${src}/ar/edu/itba/dcc/tp/parser" />
+	</target>
+
+	<target name="compile" depends="lexer, parser">
+		<javac srcdir="${src}" destdir="${bin}" debug="true" sourcepath="${src}" />
+	</target>
+
+	<target name="clean">
+		<delete>
+			<fileset dir="${bin}" includes="*/*.class" />
+		</delete>
+	</target>
+
+	<target name="dist" depends="compile">
+		<delete file="${bin}/dcc.jar">
+		</delete>
+		<jar jarfile="dcc.jar" basedir="${bin}">
+			<manifest>
+				<attribute name="Main-Class" value="ar.edu.itba.dcc.tp.run.Compiler" />
+				<attribute name="Class-Path" value="lib/asm-3.1.jar lib/jasmin.jar" />
+			</manifest>
+		</jar>
+		<!--<jar jarfile="${bin}/dcc.jar" basedir="${bin}">
+			<manifest>
+				<attribute name="Main-Class" value="ar.edu.itba.dcc.tp.run.Compiler" />
+				<attribute name="Class-Path" value="lib/asm-3.1.jar lib/jasmin.jar" />
+			</manifest>
+		</jar> --> 
+		
+	</target>
+
+	<target name="test">
+		<exec dir="test" executable="bash">
+			<arg line="runTests.sh" />
+		</exec>
+		<exec dir="test" executable="bash">
+			<arg line="runTestCases.sh" />
+		</exec>
+	</target>
+
+</project>

@@ -1,0 +1,25 @@
+location stdlib;
+use system.io;
+
+start: function {
+	print(substring("hola mundo", 0, 1));
+	print(substring("hola mundo", 1, 1));
+	print(substring("hola mundo", 2, 1));
+	print(substring("hola mundo", 3, 1));
+	print(substring("hola mundo", 4, 1));
+	print(substring("hola mundo", 5, 1));
+	print(substring("hola mundo", 6, 1));
+	print(substring("hola mundo", 7, 1));
+	print(substring("hola mundo", 8, 1));
+	print(substring("hola mundo", 9, 1));
+
+	print(substring("hola mundo", 0, 2));
+	print(substring("hola mundo", 1, 2));
+	print(substring("hola mundo", 2, 2));
+	print(substring("hola mundo", 3, 2));
+	print(substring("hola mundo", 4, 2));
+	print(substring("hola mundo", 5, 2));
+	print(substring("hola mundo", 6, 2));
+	print(substring("hola mundo", 7, 2));
+	print(substring("hola mundo", 8, 2));
+}

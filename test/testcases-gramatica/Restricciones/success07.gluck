@@ -1,0 +1,3 @@
+greaterThan:constraint x:int restriccion1 restriccion2, y:int restriccion1 {
+x > y
+}

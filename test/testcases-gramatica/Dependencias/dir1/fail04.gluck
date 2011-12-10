@@ -1,0 +1,5 @@
+start: function {
+}
+
+use dummy;
+location dir1;

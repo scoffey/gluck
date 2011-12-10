@@ -1,0 +1,9 @@
+/*
+ * Tipos de datos definidos por el usuario
+ */
+composite:type {
+	x:int,
+	y:int,
+	z:int,
+	parent: composite
+}

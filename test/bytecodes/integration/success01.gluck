@@ -1,0 +1,110 @@
+location integration;
+use system.io;
+
+// Global variables
+stack:real[];
+
+// Main program
+start:function {
+	handler:int = open("integration/success01.data");
+	rpncalc(handler);
+	close(handler);
+}
+
+// Reverse Polish notation calculator
+rpncalc:function handler:int {
+	s:string;
+	while true loop {
+		s = readLine(handler);
+		quit if s == "end";
+		print(s);
+		print(evaluate(s));
+	}
+}
+
+// Evaluates an expression in RPN and returns the result
+evaluate:function s:string -> result:real {
+	stack[0] = 0.0;
+	stack_size:int = 0;
+	from_index:int = 0;
+	len:int = strlen(s);
+	i:int = 0;
+	while i < len loop {
+		c:string = substring(s, i, 1);
+		if c == " " then {
+			op:string = substring(s, from_index, i - from_index + 1);
+			stack_size = parse(op, stack_size);
+			from_index = i + 1;
+		}
+		i = i + 1;
+	}
+	result = pop(stack_size);
+}
+
+// Parses operators and operands. In the case of operators, it pushes
+// onto the stack the result of performing the corresponding operation
+// by popping the operands from the stack. In the case of operands,
+// they are simply pushed onto the stack.
+parse:function op:string, stack_size:int -> retval:int {
+	op1:real;
+	op2:real;
+	c:string = substring(op, 0, 1);
+	if c == "+" then {
+		op2 = pop(stack_size);
+		stack_size = stack_size - 1;
+		op1 = pop(stack_size);
+		stack_size = stack_size - 1;
+		push(op1 + op2, stack_size);
+		stack_size = stack_size + 1;
+	} elseif c == "-" then {
+		op2 = pop(stack_size);
+		stack_size = stack_size - 1;
+		op1 = pop(stack_size);
+		stack_size = stack_size - 1;
+		push(op1 - op2, stack_size);
+		stack_size = stack_size + 1;
+	} elseif c == "*" then {
+		op2 = pop(stack_size);
+		stack_size = stack_size - 1;
+		op1 = pop(stack_size);
+		stack_size = stack_size - 1;
+		push(op1 * op2, stack_size);
+		stack_size = stack_size + 1;
+	} elseif c == "/" then {
+		op2 = pop(stack_size);
+		stack_size = stack_size - 1;
+		op1 = pop(stack_size);
+		stack_size = stack_size - 1;
+		push(op1 / op2, stack_size);
+		stack_size = stack_size + 1;
+	} elseif c == "%" then {
+		op2 = pop(stack_size);
+		stack_size = stack_size - 1;
+		op1 = pop(stack_size);
+		x:int = op1;
+		y:int = op2;
+		stack_size = stack_size - 1;
+		push(x % y, stack_size);
+		stack_size = stack_size + 1;
+	} else {
+		// TODO: This could fail
+		push(str2r(op), stack_size);
+		stack_size = stack_size + 1;
+	}
+	retval = stack_size;
+}
+
+// Pushes an operand onto the stack
+push:function op:real, stack_size:int {
+	stack[stack_size] = op;
+}
+
+// Pops an operand from the stack
+pop:function stack_size:int -> op:real {
+	if stack_size < 1 then {
+		print("Invalid expression.");
+		op = 0.0;
+	} else {
+		op = stack[stack_size - 1];
+	}
+}

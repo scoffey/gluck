@@ -1,0 +1,10 @@
+pair: type{
+	x: int,
+	y: int
+}
+
+
+start:function {
+	variable: pair;
+	variable{x, y} = {1, 2};
+}

@@ -1,0 +1,23 @@
+location sentences;
+use system.io;
+
+start:function {
+	msgs:string[] = {"hola", "mundo", "otra", "frase"};
+	
+	for msg in msgs loop {
+		print(msg);
+	}
+	
+	for msg in {"hola", "mundo", "otra", "frase"} loop {
+		print(msg);
+	}
+	
+	for msg in msgs loop {
+		print(msg);
+	} ifnever {
+		print("Never");
+	} ifquit {
+		print("Quit");
+	}
+	
+}

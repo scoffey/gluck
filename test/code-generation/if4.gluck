@@ -1,0 +1,23 @@
+use system.io;
+
+fn4:function {
+	
+	a:int = 10;
+	b:int = 15;
+	c:int = 20;
+	
+	if a < b then {
+		c = 30;
+	} elseif a < b then {
+		c = 90;
+	} elseif a < 2*b then {
+		c = 100;
+	} elseif a < 3*b then {
+		c = 110;
+	} else {
+		c = 120;
+	}
+	
+	print(c);
+}
+

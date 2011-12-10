@@ -1,0 +1,4 @@
+
+print:function input:string {
+	input = "TODO";
+}

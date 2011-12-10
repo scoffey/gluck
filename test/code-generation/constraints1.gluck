@@ -1,0 +1,10 @@
+
+positive:constraint x:int {
+	x > 0
+}
+
+start:function {
+	a:int positive;
+
+	a = -5;
+}

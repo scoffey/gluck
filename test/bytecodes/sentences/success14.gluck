@@ -1,0 +1,25 @@
+location sentences;
+use system.io;
+
+start:function {
+	foo();
+}
+
+foo:function {
+	a:int[] = {2, 4, 6, 8, 10};
+	
+	for var in a loop {
+		if var == 2 then {
+			quit;
+		}
+		print(var *  2);
+	}
+	ifnever {
+		print("Nunca entro");
+	}
+	ifquit {
+		print("Ejecutando el ifquit");
+	}
+	
+	print("Fin");
+}

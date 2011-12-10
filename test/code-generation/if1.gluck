@@ -1,0 +1,13 @@
+use system.io;
+
+fn1:function {
+	
+	a:int = 10;
+	b:int = 15;
+	c:int = 20;
+	
+	if a < b then {
+		c = 30;
+	}
+	print(c);
+}

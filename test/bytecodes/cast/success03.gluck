@@ -1,0 +1,24 @@
+location cast;
+
+use system.io;
+
+start:function {
+	x:int;
+	y:real;
+	z:bool;
+	
+	{x, y, z} = myfunc(2.3);
+
+	print(x);
+	print(y);
+	print(z);
+}
+
+
+
+myfunc:function v:int -> a:real, b:int, c:bool {
+	print(v);
+	a = 30;
+	b = 10.2;
+	c = false;
+}

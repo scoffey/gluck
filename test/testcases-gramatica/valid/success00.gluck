@@ -1,0 +1,12 @@
+/* Testeo de casos extrañoos por definiciones lexicas */
+
+/*
+/*comentario anidado*/
+
+//
+/* /* */*/
+*/
+
+
+start: function {
+}

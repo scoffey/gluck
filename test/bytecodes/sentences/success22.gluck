@@ -1,0 +1,25 @@
+location sentences;
+use system.io;
+
+start:function {
+	x:int = 0;
+
+	while x < 3 loop {
+		x = x + 1;
+		until x == 3 loop {
+			if x % 2 == 0 then {
+				print("vuelta");
+				quit if x % 3 == 2;
+			}
+			x = x + 1;
+		}
+		ifquit {
+			print("Estamos en el ifquit del until");
+		}
+		quit;
+	}
+	ifquit {
+		print("Estamos en el ifquit del while");
+	}
+	x = 2;
+}

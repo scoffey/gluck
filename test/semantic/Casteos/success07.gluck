@@ -1,0 +1,14 @@
+start:function {
+	// un bool se puede castear sii su lvalue es bool o string
+	a:bool = true;
+	f1(a);
+	f2(a);
+}
+
+f1:function a:bool -> b:bool {
+	b = a;
+}
+
+f2:function s:string -> t:string {
+	t = s;
+}

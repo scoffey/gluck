@@ -1,0 +1,7 @@
+location arrays;
+use system.io;
+
+start:function{
+	var:int[2];
+	var[0] = var[100];
+}

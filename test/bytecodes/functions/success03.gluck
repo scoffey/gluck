@@ -1,0 +1,12 @@
+location functions;
+use system.io;
+
+start:function {
+	for id in fn1() loop {
+		print(id);
+	}
+}
+
+fn1: function -> salida: int[] {
+	salida = {1, 2, 3};
+}

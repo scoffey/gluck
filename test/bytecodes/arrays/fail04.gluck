@@ -1,0 +1,13 @@
+location arrays;
+use system.io;
+
+point:type {
+	x:int,
+	y:int
+}
+
+start:function {
+	a:point[2];
+
+	a[0] = a[100];
+}

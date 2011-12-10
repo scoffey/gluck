@@ -1,0 +1,13 @@
+location cast;
+use system.io;
+
+start:function {
+	// un real se puede castear sii su lvalue es int, real o string
+	n:int = 3.14159;
+	x:real = 3.14159;
+	s:string = 3.14159;
+
+	print(n);
+	print(x);
+	print(s);
+}

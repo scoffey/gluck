@@ -1,0 +1,8 @@
+/*
+ * Archivo de prueba para las dependencias.
+ * Primer caso simple donde se hace referencia a un
+ * solo archivo dentro del mismo directorio.
+ * Se agrega el uso de LOCATION
+ */
+location dir1;
+use dir2.dummy;

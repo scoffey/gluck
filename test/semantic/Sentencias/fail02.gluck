@@ -1,0 +1,11 @@
+location Sentencias;
+use system.io;
+
+start:function {
+
+	b:int = 10;
+	
+	for a in b loop {
+		print(a);	
+	}
+}

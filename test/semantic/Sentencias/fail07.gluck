@@ -1,0 +1,14 @@
+location Sentencias;
+use system.io;
+
+start:function {
+	a(true);
+}
+
+a: function x:bool { 
+	z: int;
+	if (x) { 
+		z = 0; 
+	} 
+	print(z); // error: no se puede asegurar que z haya sido inicializada
+} 

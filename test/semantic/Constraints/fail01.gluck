@@ -1,0 +1,3 @@
+start:function {
+	a:int positive = 1;
+}

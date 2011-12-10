@@ -1,0 +1,15 @@
+location stdlib;
+use system.io;
+
+start: function {
+	print(strlen(substring("hola mundo", 0, 0)));
+	print(strlen(substring("hola mundo", 0, 1)));
+	print(strlen(substring("hola mundo", 0, 2)));
+	print(strlen(substring("hola mundo", 0, 3)));
+	print(strlen(substring("hola mundo", 0, 4)));
+	print(strlen(substring("hola mundo", 0, 5)));
+	print(strlen(substring("hola mundo", 0, 6)));
+	print(strlen(substring("hola mundo", 0, 7)));
+	print(strlen(substring("hola mundo", 0, 8)));
+	print(strlen(substring("hola mundo", 0, 9)));
+}

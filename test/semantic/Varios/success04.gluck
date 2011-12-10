@@ -1,0 +1,9 @@
+start:function {
+	a:int[];
+	a[0] = 1;
+	a[99] = 2;
+	a[49] = a[99];
+	a[24] = a[74];
+	// ahora error en tiempo de ejecución:
+	a[0] = a[100];
+}

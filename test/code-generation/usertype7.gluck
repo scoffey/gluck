@@ -1,0 +1,13 @@
+
+tree:type {
+	sons:tree[5]
+}
+
+start:function {
+	a:tree;
+	b:tree;
+
+	b{sons}[0] = null;
+	a{sons}[2] = b;
+}
+

@@ -1,0 +1,3 @@
+start: function {
+print("hola/* esto es un comentario */mundo");
+}

@@ -1,0 +1,9 @@
+
+/* 
+ * Ejemplo de recuperación de errores sintácticos para el caso de una
+ * instrucción de bloque utilizada en el contexto global. 
+ */
+ 
+for var in {1, 2, 3} loop {
+	;
+}

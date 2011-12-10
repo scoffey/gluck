@@ -1,0 +1,14 @@
+/*
+ * Acumulacion de restricciones
+ */
+
+start:function {
+	x:int pair natural;
+}
+
+pair: constraint x:int { x % 2 == 0 }
+natural: constraint x:int {x >= 0 }
+
+duplicate: function in1:int natural -> out:int natural pair {
+	out = in1 * 2;
+}

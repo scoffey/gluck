@@ -1,0 +1,9 @@
+start:function {
+	a: string[10]; 
+	a{3, 4} = { "dd", "aa"};   // equivale a a[3]="dd"; a[4]="aa";
+	a{5, 6} = a{3, 4}; // equivale a a[5] = a[3]; a[6]=a[4];
+	a{0, 3} = a{1, 4}; // esta operación mueve los primeros 4 elementos a la derecha, y deja el quinto sin modificar
+	a{1, 4} = a{0, 3}; // esta operación mueve los elementos 1 a 4 a la izquierda, y deja el primero sin modificar
+	//a[5] = a{5, 5}; // error, dado que el lado izquierdo es un elemento y el derecho un arreglo
+	//a{5,6} = { "s", "d", "dd" }; // error, dado que los tamaños son distintos. 
+}

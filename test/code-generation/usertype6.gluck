@@ -1,0 +1,13 @@
+
+mytype:type {
+	a:int[10][20],
+	b:bool
+}
+
+start:function {
+	test:mytype;
+	
+	test{b} = true;
+	test{a}[5][5] = 90;
+	test{a}[15] = {23, 24, 25, 26};
+}

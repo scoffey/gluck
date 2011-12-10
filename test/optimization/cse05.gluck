@@ -1,0 +1,20 @@
+fn:function i1:int, i2:int, i3:int -> o1:int {
+	tmp:int;
+	o1 = i1 + i2;
+	if o1 == i2 - i1 then {
+		o1 = i1 + i3;
+	} else {
+		o1 = i3 + i1;
+	}
+	o1 = i1 + i3;
+	if o1 == i2 - i1 then {
+		tmp = i2 + i3;
+	} else {
+		tmp = i3 + i2;
+	}
+	tmp = i2 + i3;
+}
+
+start:function {
+	fn(-3, 2, 1);
+}

@@ -1,0 +1,5 @@
+f5: function 	
+				->
+				o1:int {
+	var1: int;
+}

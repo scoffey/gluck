@@ -1,0 +1,3 @@
+vuelta
+Estamos en el ifquit del until
+Estamos en el ifquit del while

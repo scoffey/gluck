@@ -1,0 +1,28 @@
+f3: function 	p1:int, 
+				p2:int, 
+				p2:int,
+				p3:int,
+				p4:int,
+				p5:int,
+				p6:int,
+				p7:int,
+				p8:int,
+				p9:int,
+				p10:int
+				
+				->
+				
+				o1:int,
+				o2:int,
+				o3:int,
+				o4:int,
+				o5:int,
+				o6:int,
+				o7:int,
+				o8:int,
+				o9:int,
+				o10:int {
+	
+	var1: int;
+}
+

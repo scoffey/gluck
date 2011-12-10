@@ -1,0 +1,13 @@
+location Sentencias;
+use system.io;
+
+start:function {
+
+	/* Esto es un error, porque como el tipo de la variable iteradora lo define
+	 * el tipo del arreglo sobre el que itera, yo no se si promover todo a double
+	 * o demover todo a int.
+	 */
+	for a in {2, 2.0, 4} loop {
+		print(a);	
+	}
+}

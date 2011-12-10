@@ -1,0 +1,18 @@
+/* 
+ * Ejemplo de recuperación de errores sintácticos para el caso
+ * de expresiones inválidas. 
+ */
+
+start: function {
+	num: int = 13;
+}
+
+int1:int = 2+;
+int2:int = 2-)
+int3:int = 2+);
+int4:int = 2*and
+int5:int = 2/true;
+int6:int = 2%;
+bool1:bool = true and;
+bool2:bool = true or;
+bool3:bool = 2 < (;

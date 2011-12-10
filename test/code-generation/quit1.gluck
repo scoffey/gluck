@@ -1,0 +1,20 @@
+use system.io;
+
+start:function {
+	a:int[] = {2, 4, 6, 8, 10, 12, 14};
+
+	for x in a loop {
+		b:int = 0;
+		if x % 4 == 0 then  {
+			while b < x loop {
+				b = b + 1;
+				quit;
+			}
+		}
+		b = 2;
+		quit if x / 3 == 0;
+	} 
+	ifquit {
+		print("Estamos en el ifquit");
+	}
+}

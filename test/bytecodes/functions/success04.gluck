@@ -1,0 +1,14 @@
+location functions;
+use system.io;
+
+start:function {
+	vec:int[][] = fn1();
+
+	for id in vec[1] loop {
+		print(id);
+	}
+}
+
+fn1: function -> salida: int[][] {
+	salida = {{1, 2, 3}, {4, 5, 6}};
+}

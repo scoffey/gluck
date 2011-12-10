@@ -1,0 +1,10 @@
+use system.io;
+
+start:function {
+	print(myfunc());
+}
+
+
+myfunc:function -> output:int {
+	output = 91;
+}

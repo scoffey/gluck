@@ -1,0 +1,7 @@
+/*
+ * Declaracion de funciones con error.
+ */
+
+f2 function {
+	var1: int;
+}

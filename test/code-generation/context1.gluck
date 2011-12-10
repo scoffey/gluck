@@ -1,0 +1,15 @@
+
+a:int = 31;
+
+start:function {
+	a:int = 90;
+
+	if true then {
+		a:int = 20;
+		if false then {
+			a:real = 12;
+		} else {
+			a:bool = true;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+location sentences;
+use system.io;
+
+start:function {
+	fn2();
+}
+
+fn2:function {
+	
+	a:int = 10;
+	b:int = 15;
+	c:int = 20;
+	
+	
+	if a < b then {
+		c = 30;
+	} else {
+		c = 90;
+	}
+	
+	print(c);
+}

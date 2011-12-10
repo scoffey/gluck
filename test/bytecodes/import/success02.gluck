@@ -1,0 +1,10 @@
+location import;
+use import.constraints.constraints_only_obj;
+use import.userdefinedtypes.userdefinedtypes_only_obj;
+
+
+start: function {
+	var: point positive_point;
+
+	var{x, y} = {1, 1};
+}

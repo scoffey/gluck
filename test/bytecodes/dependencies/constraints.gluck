@@ -1,0 +1,8 @@
+location dependencies;
+
+global:int = 30;
+
+
+positive:constraint x:int {
+	x > 0
+}

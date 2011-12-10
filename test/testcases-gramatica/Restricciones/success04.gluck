@@ -1,0 +1,6 @@
+/*
+ * Restricciones con dos parametros
+ */
+greaterThan:constraint x:int, y:int {
+	x > y
+}

@@ -1,0 +1,15 @@
+/*
+ * Expresiones booleanas sin error.
+ */
+start: function {
+	var1: int;
+	var2: real;
+	var3: string;
+	var4: real;
+	var5: real;
+	var1 = true;
+	var2 = false;
+	var4 = 1.0000000001;
+	var5 = 1.0000000002;
+	var3 = var1 and false;
+}

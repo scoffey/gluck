@@ -1,0 +1,20 @@
+dict:type {
+	key:int positive,
+	value:string
+}
+
+positive:constraint x:int {
+	x > 0
+}
+
+start:function {
+	array:dict[] = my_itoa({1, 2, 3, 4, 5});
+}
+
+my_itoa:function input:int[] -> output:dict[] {
+	j:int = 0;
+	for i in input loop {
+		output[j]{key, value} = {i, i};
+		j = j + 1;
+	}
+}

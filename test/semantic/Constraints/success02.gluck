@@ -1,0 +1,27 @@
+positive:constraint x:int {
+	x > 0
+}
+
+person:type {
+	age:int positive,
+	number:int positive even
+}
+
+start:function {
+	a:int positive = 1;
+	b:int even = 2;
+	c:int positive even = 3;
+	d:int positive even = 4;
+	f1(d);
+	p:person;
+	p{age} = -1;
+	p{number} = -3;
+}
+
+even:constraint x:int {
+	(x % 2) == 0
+}
+
+f1:function i1:int positive even -> o1:int positive {
+	o1 = i1 / 2;
+}

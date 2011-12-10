@@ -1,0 +1,11 @@
+use system.io;
+
+foo:function {
+	a:int[] = {2.0, 4, 6, 8, 10};
+	
+	for var in a loop {
+		print(var *  2);
+	}
+	
+	print("Fin");
+}

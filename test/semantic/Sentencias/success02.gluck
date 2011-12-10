@@ -1,0 +1,14 @@
+location Sentencias;
+use system.io;
+
+start:function {
+	a:int = 10;
+	b:int = 20;
+	c:int = 30;
+	
+	for x in {a, b, c, 2*a, a+b, b*c} loop {
+		for y in {x, 2*x, 3*x, 4*x} loop {
+			print(y);
+		}
+	}	
+}

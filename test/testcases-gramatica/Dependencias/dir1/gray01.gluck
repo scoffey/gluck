@@ -1,0 +1,8 @@
+/*
+ * Archivo de prueba para las dependencias.
+ */
+use dummy;
+use dummy;
+location dir1;
+use dummy;
+use dummy;

@@ -1,0 +1,10 @@
+location varios;
+
+start: function {
+	num1: real;
+	num2: real = 5.5;
+	i1:int = 5;
+	i2:int = 2;
+	num1 = (num2 + 1) * 5 - (10 / num2) + 1 / i2;
+	i2 = i1 * 2 - i1 % 4 - 10 / 9;
+}

@@ -1,0 +1,26 @@
+start:function {
+	a:int;
+	b:string; 
+	{a, b} = fn();
+}
+
+fn:function -> o1:int, o2:string {
+	o1 = 3;
+	o2 = "tres";
+}
+
+point:type { 
+   x:real, 
+   y:real 
+}
+
+tmp:function {
+	p:point;
+	p{x, y} = {1.0, 2.0}; 
+	p{x, y} = origin(); 
+}
+
+origin:function -> o1:real, o2:real {
+	o1 = 0.0;
+	o2 = 0.0;
+}

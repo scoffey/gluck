@@ -1,0 +1,4 @@
+
+start:function {
+	a:real = true;
+}

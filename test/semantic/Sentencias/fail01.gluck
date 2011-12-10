@@ -1,0 +1,9 @@
+location Sentencias;
+use system.io;
+
+start:function {
+
+	for a in 5 loop {
+		print(a);	
+	}
+}

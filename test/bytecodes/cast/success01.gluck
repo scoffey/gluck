@@ -1,0 +1,9 @@
+location cast;
+use system.io;
+
+start: function {
+	var1:int = -15 % 2;
+	var2:real = 1.2*10+var1;
+	var3:bool = !false and true or false;
+	var4:string = var1*2+var2/10;
+}

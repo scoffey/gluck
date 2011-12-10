@@ -1,0 +1,3 @@
+positive:constraint x:int {
+5+1
+}

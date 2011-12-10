@@ -1,0 +1,18 @@
+location sentences;
+use system.io;
+
+start:function {
+	a:int = 30;
+	b:int = 90;
+
+	if a > b then {
+		print("hola");
+	} else {
+		if a * 3 >= b then {
+			print("bien");
+		} else {
+			print("mal");
+		}
+	}
+}
+

@@ -1,0 +1,15 @@
+location arrays;
+use system.io;
+
+start:function {
+	a:int[2];
+
+	a[0] = 1;
+	a[1] = 2;
+	a[2] = 3;
+
+	a[100] = a[1] + 4;
+	a[50] = a[60] + a[70];
+	a[0] = a[101];
+
+}

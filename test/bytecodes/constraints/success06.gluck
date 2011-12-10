@@ -1,0 +1,41 @@
+location constraints;
+
+point:type {
+	x:real,
+	y:real
+}
+
+start:function {
+	x:real greater_than(1) = 2;
+	y:real between(3, 5) = 4;
+	current_year:int year = 2008;
+	ones:int[][];
+	ones[0][0] = 1;
+	ones[0][1] = 0;
+	ones[1][0] = 0;
+	ones[1][1] = 1;
+	p:point normalized;
+	p{x} = 0.3;
+	p{y} = 0.7;
+}
+
+greater_than:constraint x:real, y:real {
+	x > y
+}
+
+between:constraint x:real, lower:real, upper:real {
+	(x >= lower) and (x <= upper)
+}
+
+year:constraint x:int greater_than(1970) {
+	x < 2038
+}
+
+diagonal:constraint matrix:int[][] {
+	(matrix[0][1] == 0) and (matrix[1][0] == 0)
+}
+
+normalized:constraint p:point {
+	(p{x} >= 0) and (p{x} <= 1) and (p{y} >= 0) and (p{y} <= 1)
+}
+

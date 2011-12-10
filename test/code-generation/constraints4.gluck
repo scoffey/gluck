@@ -1,0 +1,12 @@
+
+start:function {
+	myfunc(3.2);
+}
+
+
+myfunc:function input:int positive -> output:int natural {
+	output = input * 2;
+}
+
+positive:constraint x:int { x > 0 }
+natural:constraint x:int { x > 1 }

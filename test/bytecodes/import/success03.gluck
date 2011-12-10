@@ -1,0 +1,10 @@
+location import;
+
+use system.io;
+use import.functions.functions_only_obj;
+
+start:function {
+	for x in fn1() loop {
+		print(x);
+	}
+}

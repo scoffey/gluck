@@ -1,0 +1,527 @@
+Fibonacci series (first 30 terms):
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+987
+1597
+2584
+4181
+6765
+10946
+17711
+28657
+46368
+75025
+121393
+196418
+317811
+514229
+ 
+Factorial of numbers from 1 to 12: 
+1
+2
+6
+24
+120
+720
+5040
+40320
+362880
+3628800
+39916800
+479001600
+ 
+GCD Table
+The gcd between these integers is: 
+2
+2
+2
+The gcd between these integers is: 
+2
+3
+1
+The gcd between these integers is: 
+2
+4
+2
+The gcd between these integers is: 
+2
+5
+1
+The gcd between these integers is: 
+2
+6
+2
+The gcd between these integers is: 
+2
+7
+1
+The gcd between these integers is: 
+2
+8
+2
+The gcd between these integers is: 
+2
+9
+1
+The gcd between these integers is: 
+2
+10
+2
+The gcd between these integers is: 
+2
+11
+1
+The gcd between these integers is: 
+2
+12
+2
+The gcd between these integers is: 
+2
+13
+1
+The gcd between these integers is: 
+2
+14
+2
+The gcd between these integers is: 
+2
+15
+1
+The gcd between these integers is: 
+2
+16
+2
+The gcd between these integers is: 
+3
+3
+3
+The gcd between these integers is: 
+3
+4
+1
+The gcd between these integers is: 
+3
+5
+1
+The gcd between these integers is: 
+3
+6
+3
+The gcd between these integers is: 
+3
+7
+1
+The gcd between these integers is: 
+3
+8
+1
+The gcd between these integers is: 
+3
+9
+3
+The gcd between these integers is: 
+3
+10
+1
+The gcd between these integers is: 
+3
+11
+1
+The gcd between these integers is: 
+3
+12
+3
+The gcd between these integers is: 
+3
+13
+1
+The gcd between these integers is: 
+3
+14
+1
+The gcd between these integers is: 
+3
+15
+3
+The gcd between these integers is: 
+3
+16
+1
+The gcd between these integers is: 
+4
+4
+4
+The gcd between these integers is: 
+4
+5
+1
+The gcd between these integers is: 
+4
+6
+2
+The gcd between these integers is: 
+4
+7
+1
+The gcd between these integers is: 
+4
+8
+4
+The gcd between these integers is: 
+4
+9
+1
+The gcd between these integers is: 
+4
+10
+2
+The gcd between these integers is: 
+4
+11
+1
+The gcd between these integers is: 
+4
+12
+4
+The gcd between these integers is: 
+4
+13
+1
+The gcd between these integers is: 
+4
+14
+2
+The gcd between these integers is: 
+4
+15
+1
+The gcd between these integers is: 
+4
+16
+4
+The gcd between these integers is: 
+5
+5
+5
+The gcd between these integers is: 
+5
+6
+1
+The gcd between these integers is: 
+5
+7
+1
+The gcd between these integers is: 
+5
+8
+1
+The gcd between these integers is: 
+5
+9
+1
+The gcd between these integers is: 
+5
+10
+5
+The gcd between these integers is: 
+5
+11
+1
+The gcd between these integers is: 
+5
+12
+1
+The gcd between these integers is: 
+5
+13
+1
+The gcd between these integers is: 
+5
+14
+1
+The gcd between these integers is: 
+5
+15
+5
+The gcd between these integers is: 
+5
+16
+1
+The gcd between these integers is: 
+6
+6
+6
+The gcd between these integers is: 
+6
+7
+1
+The gcd between these integers is: 
+6
+8
+2
+The gcd between these integers is: 
+6
+9
+3
+The gcd between these integers is: 
+6
+10
+2
+The gcd between these integers is: 
+6
+11
+1
+The gcd between these integers is: 
+6
+12
+6
+The gcd between these integers is: 
+6
+13
+1
+The gcd between these integers is: 
+6
+14
+2
+The gcd between these integers is: 
+6
+15
+3
+The gcd between these integers is: 
+6
+16
+2
+The gcd between these integers is: 
+7
+7
+7
+The gcd between these integers is: 
+7
+8
+1
+The gcd between these integers is: 
+7
+9
+1
+The gcd between these integers is: 
+7
+10
+1
+The gcd between these integers is: 
+7
+11
+1
+The gcd between these integers is: 
+7
+12
+1
+The gcd between these integers is: 
+7
+13
+1
+The gcd between these integers is: 
+7
+14
+7
+The gcd between these integers is: 
+7
+15
+1
+The gcd between these integers is: 
+7
+16
+1
+The gcd between these integers is: 
+8
+8
+8
+The gcd between these integers is: 
+8
+9
+1
+The gcd between these integers is: 
+8
+10
+2
+The gcd between these integers is: 
+8
+11
+1
+The gcd between these integers is: 
+8
+12
+4
+The gcd between these integers is: 
+8
+13
+1
+The gcd between these integers is: 
+8
+14
+2
+The gcd between these integers is: 
+8
+15
+1
+The gcd between these integers is: 
+8
+16
+8
+The gcd between these integers is: 
+9
+9
+9
+The gcd between these integers is: 
+9
+10
+1
+The gcd between these integers is: 
+9
+11
+1
+The gcd between these integers is: 
+9
+12
+3
+The gcd between these integers is: 
+9
+13
+1
+The gcd between these integers is: 
+9
+14
+1
+The gcd between these integers is: 
+9
+15
+3
+The gcd between these integers is: 
+9
+16
+1
+The gcd between these integers is: 
+10
+10
+10
+The gcd between these integers is: 
+10
+11
+1
+The gcd between these integers is: 
+10
+12
+2
+The gcd between these integers is: 
+10
+13
+1
+The gcd between these integers is: 
+10
+14
+2
+The gcd between these integers is: 
+10
+15
+5
+The gcd between these integers is: 
+10
+16
+2
+The gcd between these integers is: 
+11
+11
+11
+The gcd between these integers is: 
+11
+12
+1
+The gcd between these integers is: 
+11
+13
+1
+The gcd between these integers is: 
+11
+14
+1
+The gcd between these integers is: 
+11
+15
+1
+The gcd between these integers is: 
+11
+16
+1
+The gcd between these integers is: 
+12
+12
+12
+The gcd between these integers is: 
+12
+13
+1
+The gcd between these integers is: 
+12
+14
+2
+The gcd between these integers is: 
+12
+15
+3
+The gcd between these integers is: 
+12
+16
+4
+The gcd between these integers is: 
+13
+13
+13
+The gcd between these integers is: 
+13
+14
+1
+The gcd between these integers is: 
+13
+15
+1
+The gcd between these integers is: 
+13
+16
+1
+The gcd between these integers is: 
+14
+14
+14
+The gcd between these integers is: 
+14
+15
+1
+The gcd between these integers is: 
+14
+16
+2
+The gcd between these integers is: 
+15
+15
+15
+The gcd between these integers is: 
+15
+16
+1
+The gcd between these integers is: 
+16
+16
+16

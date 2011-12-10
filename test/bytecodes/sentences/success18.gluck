@@ -1,0 +1,20 @@
+location sentences;
+use system.io;
+
+start:function {
+	foo();
+}
+
+foo:function {
+
+	a:int = 10;
+	
+	while a > 0 loop {
+		a = a - 1;
+	}
+	ifnever {
+		print("Never");
+	}
+
+	print("End");
+}

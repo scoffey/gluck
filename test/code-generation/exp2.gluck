@@ -1,0 +1,10 @@
+
+use system.io;
+
+start:function {
+	print(fn1() + (1 + 2));
+}
+
+fn1:function -> out:real {
+	out = 3.14;
+}

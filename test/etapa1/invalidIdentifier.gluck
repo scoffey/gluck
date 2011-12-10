@@ -1,0 +1,11 @@
+
+/* 
+ * Ejemplo de recuperación de errores léxicos para el caso
+ * de identificadores inválidos. Los identificadores no pueden 
+ * comenzar con _.
+ */
+
+start: function {
+	_num: int = 13;
+		
+}

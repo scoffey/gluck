@@ -1,0 +1,6 @@
+a:int = 2;
+
+start:function{
+	b: int = a;
+	c:int = a+b;
+}

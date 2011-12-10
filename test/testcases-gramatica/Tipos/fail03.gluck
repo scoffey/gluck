@@ -1,0 +1,5 @@
+composite1:type{
+composite2:type{
+x:int
+}
+}

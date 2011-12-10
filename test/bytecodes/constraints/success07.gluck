@@ -1,0 +1,9 @@
+location constraints;
+
+start:function {
+	x:real greater_than(1) = 2;
+}
+
+greater_than:constraint x:real, y:real {
+	x > y
+}

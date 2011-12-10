@@ -1,0 +1,6 @@
+/*
+ * Archivo de prueba para las dependencias.
+ * Invocacion a un directorio y archivo que no existente.
+ */
+location noExists;
+use noExists;

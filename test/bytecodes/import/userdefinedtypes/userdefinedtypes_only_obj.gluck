@@ -1,0 +1,7 @@
+location import.userdefinedtypes;
+
+point: type {
+	x: real,
+	y: real
+}
+

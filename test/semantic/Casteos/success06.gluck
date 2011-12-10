@@ -1,0 +1,19 @@
+start:function {
+	// un real se puede castear sii su lvalue es int, real o string
+	x:real = 3.14159;
+	f1(x);
+	f2(x);
+	f3(x);
+}
+
+f1:function n:int -> x:real {
+	x = n;
+}
+
+f2:function x:real -> y:real {
+	y = x;
+}
+
+f3:function s:string -> t:string {
+	t = s;
+}

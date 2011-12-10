@@ -1,0 +1,19 @@
+start:function {
+	// un int se puede castear sii su lvalue es int, real o string
+	n:int = 314159;
+	f1(n);
+	f2(n);
+	f3(n);
+}
+
+f1:function n:int -> m:int {
+	m = n;
+}
+
+f2:function x:real -> n:int {
+	n = x;
+}
+
+f3:function s:string -> t:string {
+	t = s;
+}

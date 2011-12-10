@@ -1,0 +1,3 @@
+start:function{
+a:string[10];
+}

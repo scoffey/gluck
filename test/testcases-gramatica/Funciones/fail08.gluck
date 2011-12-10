@@ -1,0 +1,5 @@
+f7: function 	p1: int
+				->
+				o1{
+	var1: int;
+}

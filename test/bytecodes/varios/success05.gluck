@@ -1,0 +1,24 @@
+location varios;
+
+positive: constraint x:int { x >= 0 }
+
+point:type {
+   x:int positive,
+   y:real
+}
+
+start: function {
+    i1: int positive;
+    i2: int;
+    pp1: point;
+    pp2: point;
+    pp1{x, y} = { 1, -2 };
+    i1 = 0;
+	{i2, pp2} = fn1(i1, pp1);
+}
+
+fn1:function p1:int positive, po1:point -> p2:int positive, po2:point {
+	p2 = p1;
+	po2 = po1;
+	po2{y} =  po1{x};
+}

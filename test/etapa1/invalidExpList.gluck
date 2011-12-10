@@ -1,0 +1,7 @@
+/* 
+ * Ejemplo de recuperación de errores sintácticos para el caso
+ * de listas inválidas de expresiones. 
+ */
+
+myvar: int[] = {1, 2,, 3};
+

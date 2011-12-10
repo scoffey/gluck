@@ -1,0 +1,14 @@
+positive:constraint x:int {
+	x > 0
+}
+
+start:function {
+	a:int positive = 1;
+	b:int even = 2;
+	c:int positive even = 3;
+	d:int positive even = 4;
+}
+
+even:constraint x:int {
+	(x % 2) == 0
+}

@@ -1,0 +1,23 @@
+use system.io;
+
+start:function {
+	x:int = 0;
+
+	while x < 100 loop {
+		quit if x % 2 == 0;
+		x = x + 1;
+		until x == 90 loop {
+			if x % 2 == 0 then {
+				quit if x % 4 == 1;
+			}
+			quit;	
+		}
+		ifquit {
+			print("Estamos en el ifquit del until");
+		}
+	}
+	ifquit {
+		print("Estamos en el ifquit del while");
+	}
+	x = 2;
+}

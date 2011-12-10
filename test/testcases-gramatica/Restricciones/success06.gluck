@@ -1,0 +1,4 @@
+greaterThan:constraint x:int, y:int {
+x > y
+}
+fn:function in1:int, in2:int greaterThan(in1) {}

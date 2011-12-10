@@ -1,0 +1,6 @@
+start: function {
+	var1: string;
+	var1 = "hola";
+	var2: int;
+	var2 = var1 + fn();
+}

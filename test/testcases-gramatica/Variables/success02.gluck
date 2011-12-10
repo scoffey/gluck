@@ -1,0 +1,9 @@
+/*
+ * Declaracion e inicializacion simple de variables sin error.
+ */
+start: function {
+	var1: int = 1;
+	var2: bool = true;
+	var3: real = 1.0;
+	var4: string = "hola mundo";
+}

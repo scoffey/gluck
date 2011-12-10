@@ -1,0 +1,11 @@
+pair: type{
+	x: string,
+	y: int
+}
+
+
+start:function {
+	var: pair;
+	realVar: real = 3.5;
+	var{x, y} = {true, realVar};
+}

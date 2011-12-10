@@ -1,0 +1,12 @@
+
+fn1:function a:int -> b:int {
+	b = a*2;
+}
+
+start:function {
+	c:int = fn1(10);
+	d:int;
+	d = fn1(5.1);
+	e:real = fn1(c);
+}
+

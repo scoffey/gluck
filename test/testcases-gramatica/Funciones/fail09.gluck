@@ -1,0 +1,7 @@
+f8: function 	p1:int
+				->
+				o1:int {
+	f9: function {
+		var1:int;
+	}
+}

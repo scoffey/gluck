@@ -1,0 +1,21 @@
+location varios;
+
+start: function {
+	var:int = 1;
+	fn1(var);
+}
+
+fn:function {
+	fn1(2);
+}
+
+var:int;
+
+fn1:function p1:int {
+	var: real;
+	var = fn2(p1) + 1.5;
+}
+
+fn2:function p1:int -> p2:int {
+	p2 = p1;
+}

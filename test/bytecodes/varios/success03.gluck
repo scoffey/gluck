@@ -1,0 +1,29 @@
+location varios;
+
+start:function{
+	variable1:int = 3;
+	variable2:string;
+	if variable1 == 1 then {
+		variable2 = "primer caso";
+	}
+
+	if variable1 == 1 then {
+		variable2 = "primer caso";
+	} else {
+		variable2 = "segundo caso";
+	}
+
+	if variable1 == 1 then {
+		variable2 = "primer caso";
+	} elseif variable1 == 2 then {
+		variable2 = "elseif";
+	}
+
+	if variable1 == 1 then {
+		variable2 = "primer caso";
+	} elseif variable1 == 2 then {
+		variable2 = "elseif";
+	} else {
+		variable2 = "segundo caso";
+	}
+}

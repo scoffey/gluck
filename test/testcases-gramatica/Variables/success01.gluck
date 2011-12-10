@@ -1,0 +1,9 @@
+/*
+ * Declaracion simple de variables sin error.
+ */
+start: function {
+	var1: int;
+	var2: bool;
+	var3: real;
+	var4: string;
+}

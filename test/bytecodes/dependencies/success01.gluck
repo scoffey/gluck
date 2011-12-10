@@ -1,0 +1,21 @@
+location dependencies;
+use dependencies.constraints;
+use dependencies.dir1.functions;
+use system.io;
+
+a: bool = true;
+global:real = 3.14;
+
+start:function {
+	a:string = "soy success";
+	x:int positive;
+
+	x = 10;
+	if isNatural(x) then {
+		print("natural");
+	} else {
+		print("not natural");
+	}
+
+}
+

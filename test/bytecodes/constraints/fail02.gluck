@@ -1,0 +1,8 @@
+location  constraints;
+
+gt: constraint x:int, y:int { x > y }
+
+start: function {
+	var1: int gt(10);
+	var1 = 0;
+}

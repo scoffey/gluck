@@ -1,0 +1,10 @@
+start:function {
+	x:int;
+	y:int;
+	z:int;
+	w:int;
+	x = 1 + 2;
+	y = 1 + 2;
+	z = x - y;
+	w = x - y;
+}

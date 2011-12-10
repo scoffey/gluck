@@ -1,0 +1,9 @@
+location constraints;
+
+positive: constraint x:int { x > 0 }
+
+var:int positive;
+
+start: function {
+	var = 20;
+}

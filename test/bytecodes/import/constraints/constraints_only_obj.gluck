@@ -1,0 +1,6 @@
+location import.constraints;
+use import.userdefinedtypes.userdefinedtypes_only_obj;
+
+
+positive: constraint x: int { x > 0 }
+positive_point: constraint p: point { p{x} > 0 and p{y} > 0}

@@ -1,0 +1,3 @@
+start:function{
+if a==true then {} elseif b==true then {}
+}

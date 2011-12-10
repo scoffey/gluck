@@ -1,0 +1,9 @@
+
+start:function {
+	f1(3);
+}
+
+f1:function  i1:int -> o1:int, o2:int {
+	o1 = i1 + 7;
+	// o2 no inicializado
+}

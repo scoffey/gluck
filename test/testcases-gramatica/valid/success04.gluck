@@ -1,0 +1,76 @@
+/* Testeo de funciones y arreglos */
+
+
+func1: function param1:int, param2: real {
+}
+
+func2: function param1:int, param2: real -> param3: bool, param4: real{
+	param3 = true;
+	param4 = 2.0;
+}
+
+func3: function -> param1:bool{
+	b1: bool = true;
+	b2: bool = false;
+	b3: bool = true;
+	param1 = !(b1 and b2 or b3);  
+}
+
+func4: function int1: int constraint1, bool1: bool[] contraint1 contraint2 -> real1: real[] constraint3(bool1, int1){
+	v1: bool;
+	
+	{v1, real1[2]} = func2(2, 3.0);
+	real1 = {2.0, v1};
+}
+
+func5: function bool1: bool{
+}
+
+func5: function -> real1: real, int1: int, bool_vec: bool[]{
+	real1 = 2;
+	int1 = 3;
+	bool_vec = {true, true};
+}
+
+func6: function int1: int constraint1, bool1: bool[] contraint1 contraint2 -> real1: real[] constraint3(bool1, 2){
+	v1: bool;
+	
+	{v1, real1[2]} = func2(2, 3.0);
+	real1 = {2.0, v1};
+}
+
+start: function {
+	func1(2, 3);
+	
+	bool1: bool = true;
+	real1: real = 0.0;
+	int1: int = -1;
+	
+	/* No actualizo los parametros de salida */
+	func2(2, 3.3);
+	
+	/* Actualizo los parametros de salida */
+	p1 = func3();
+	
+	/* El parametro de salida es un vector */
+	v1: bool;
+	v2: bool;
+	v3: bool[];
+	{v1, v2} = func4(1, {true, true});
+	v3 = func4(1, {true, true});
+	v3{0, 2} = func4(1, {true, true});
+	
+	func5(v3[0]);
+	func5(v3{0,0});
+	
+	/* Varios parametros de salida () */
+	{real1, int1, v3} = func6();
+	
+	
+	/* Mas cosas de arreglos */
+	real1 = int_func();
+	int_vec1: int[real1*2 % 5] constraint1 = {1, 2, 3, 4, 5};
+	
+	int_vec1{0, 3} = inte_vec{1, 4};
+	int_vec[0] = -1;
+}

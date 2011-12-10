@@ -1,0 +1,12 @@
+
+fn:function -> a:int[3+4] {
+	b:int[] = {10, 20, 30, 40};
+	b[2] = 80;
+	a = b;
+}
+
+start:function {
+	c:int[];
+	c = fn();
+}
+

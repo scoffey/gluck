@@ -1,0 +1,51 @@
+location Varios;
+use system.io; 
+
+// this is an inline comment
+/* 
+   this is a
+   multiline
+   comment 
+*/
+/* this is a /* nested */ comment */
+
+start: function { 
+	print("hola mundo"); 
+} 
+
+foo: function { 
+	num1: int; 
+	num2: int = 5; 
+	num1 = num2 * 3 - 5; 
+	print(num1); 
+} 
+
+bar: function {
+	var1:int = 5 + 4; 
+	var2:int = 8 - 3;
+	b:bool = 6 == 7 or 4 == var1;
+	c:bool = var2 * var1 > 5;
+	d:bool = fn1(var2, true) != fn2();
+}
+
+fn1:function i1:int, i2:bool -> o1:int {
+	if i2 then {
+		o1 = i1;
+	} else {
+		o1 = -i1;
+	}
+}
+
+fn2:function -> o1:real {
+	o1 = 2.0;
+}
+
+fn3:function -> o2:int[] {
+	array:int[1 + fn4()];
+	array[4] = 90;
+	o2 = array;
+}
+
+fn4:function -> o1:int {
+	o1 = 8;
+}

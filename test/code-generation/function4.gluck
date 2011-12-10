@@ -1,0 +1,11 @@
+start:function {
+	fn1(2);
+	fn2(fn1(90));
+}
+
+fn1:function a:int -> b:real {
+	b = a * 2;
+}
+
+fn2:function c:int {
+}

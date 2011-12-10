@@ -1,0 +1,19 @@
+start:function{
+	while a==true loop {
+		if a==true then{
+			quit;
+		} elseif a==true then {
+			quit;
+		} else {
+			quit;
+		}
+	} 
+	
+	ifnever{
+	
+	} 
+	
+	ifquit{
+	
+	}
+}

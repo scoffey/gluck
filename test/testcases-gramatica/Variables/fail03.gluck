@@ -1,0 +1,9 @@
+/*
+ * Declaracion simple de variables con error.
+ * Error sintactico en la declaracion de la variable.
+ */
+start: function {
+	var1: int;
+	var2: ;
+	var3: int
+}

@@ -1,0 +1,3 @@
+start: function {
+print/*comentario*/("hola mundo");
+}

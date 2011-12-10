@@ -1,0 +1,7 @@
+use system.io;
+
+start:function {
+	for x in {{1, 2}, {3, 4, 5, 6}, {8}}[1] loop {
+		print(x);
+	}
+}

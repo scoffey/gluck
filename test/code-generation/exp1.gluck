@@ -1,0 +1,8 @@
+use system.io;
+
+start:function {
+	print(2 * 1.5);		// El 2 debe castearse a double.
+	print(5);			// El 2 debe castearse a string.
+	print(true);		// El true debe castearse a string.
+	a:int = 10.1;		// El 10.1 debe castearse a int.
+}

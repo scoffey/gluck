@@ -1,0 +1,151 @@
+/* Testeos de sentencias */
+
+start:function{
+
+	int1: int;
+	real1: real;
+	type1: type11;
+	int_vec: int[];
+	
+	/* Asignaciones */
+	int1 = 0;
+	type1{var1} = 0;
+	{type1{var1}, type1{var2}, type1{var3}} = {1, 2, 3};
+	int_vec[1*int1] = 0;
+	int_vec{1, 4} = {1, 2, 3, 4};
+	
+	/* Condicional */
+	
+	if true then {
+		int1 = 0;
+	}
+	
+	if false then {
+		int1 = 0;
+	} elseif true then {
+		int1 = 0;
+	}
+	
+	if true	then{
+		int1 = 0;
+	} else {
+		int1 = 0;
+	}
+	
+	if true then {
+		int1 = 0;
+	}
+	elseif 1 > int_func() then {
+		int1 = 0;
+	} elseif true != bool_func() then { 
+		int1 = 0;
+	} elseif bool_func() == bool_func() then {
+		int1 = 0;
+	} elseif bool_func() and (1 >= 2.0 or false ) then {
+		int1 = 0;
+	} else {
+		int1 = 0;
+	}
+	
+	
+	/* Ciclos for */
+	int_vec: int[];
+	var: int;
+	int1: int;
+	
+	for var in int_vec loop {
+		int1 = 0;
+	}
+	
+	for var in {var{campo1}, var{campo2}, var{campo3}} loop {
+		int1 = 0;
+	}
+	
+	for var in {1, 1+1, 1*3, 12/3} loop {
+		int1 = 0;
+	}
+	
+/*TODO: es valido esto?
+	for var in {} loop {
+		int1 = 0;
+	}*/
+	
+	for var in bool_vec_func() loop {
+		int1 = 0;
+		quit if bool_func() and true or false;
+		quit if true;
+	} ifnever{
+		int1 = 0;
+	}
+	
+	for var in {0} loop {
+		int1 = 0;
+		quit;
+	} ifquit {
+		int1 = 0;
+	}
+		
+	for var in {1, 2, 3, 4, 5, 6, 7, 8, 9} loop {
+		int1 = 0;
+	} ifnever {
+		num = num+1;
+	} ifquit{
+		num = num -1;
+	}
+	
+	/* Ciclos while y until */
+	i: int = 0;
+	while bool_func() loop {
+		i = i +1;
+	}
+	
+	while !(flag or bool_func()) loop {
+		i = i +1;
+	}
+
+	while !type1{var1} loop {
+		i = i +1;
+	}
+	
+	while bool_vec_func({true, true, type1{var1}}) or false loop {
+		i = i +1;
+		quit if (bool_func() and true) or false;
+		quit if false;		
+	} ifquit {
+		int1 = 0;
+	}
+
+	while i < 10 loop {
+		i = i +1;
+	} ifnever {
+		int1 = 0;
+	}
+	
+	until bool_func() loop {
+		i = i +1;
+	}
+	
+	until !(flag or bool_func()) loop {
+		i = i +1;
+	}
+
+	until !type1{var1} loop {
+		i = i +1;
+	}
+	
+	until bool_vec_func({true, true, type1{var1}}) or false loop {
+		i = i +1;
+		quit if (bool_func() and true) or false;
+		quit if false;		
+	} ifquit {
+		int1 = 0;
+	}
+
+	until i < 10 loop {
+		i = i +1;
+	} ifnever {
+		int1 = 0;
+	} ifquit {
+		int1 = 0;
+	}
+}

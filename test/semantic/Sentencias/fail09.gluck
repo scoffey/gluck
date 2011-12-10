@@ -1,0 +1,4 @@
+start:function {
+	a: string[10]; 
+	a[5] = a{5, 5}; // error, dado que el lado izquierdo es un elemento y el derecho un arreglo
+}

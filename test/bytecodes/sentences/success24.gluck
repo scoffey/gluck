@@ -1,0 +1,17 @@
+location sentences;
+use system.io;
+
+start:function {
+	
+	a:int = 0;
+
+	while a < 5 loop {
+		b:int = a;
+		while b < 5 loop {
+			print(b);
+			b = b + 1;
+		}		
+		a = a + 1;
+	}
+	
+}

@@ -1,0 +1,5 @@
+/*
+ * Restricciones
+ */
+
+positive:constraint x:int { x > 0 }

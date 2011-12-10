@@ -1,0 +1,1 @@
+until a==true loop {} ifnever{} ifquit{}

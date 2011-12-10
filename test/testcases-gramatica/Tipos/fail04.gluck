@@ -1,0 +1,4 @@
+composite:type{
+x:int;
+y:int;
+}

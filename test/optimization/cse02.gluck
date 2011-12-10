@@ -1,0 +1,10 @@
+start:function {
+	x:int;
+	y:int;
+	z:int;
+	w:int;
+	x = 3 * 2;
+	y = 2 * 3;
+	z = x - y;
+	w = y / x;
+}

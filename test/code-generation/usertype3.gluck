@@ -1,0 +1,13 @@
+list: type{
+	data: int,
+	next: list
+}
+
+
+start:function {
+	a:list;
+	b:list;
+
+	a{data, next} = {10.2, null};
+	b{data, next} = {30, a};
+}

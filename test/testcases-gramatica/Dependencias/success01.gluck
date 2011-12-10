@@ -1,0 +1,6 @@
+/*
+ * Archivo de prueba para las dependencias.
+ * Primer caso simple donde se hace referencia a un
+ * solo archivo dentro del mismo directorio.
+ */
+use dummy;

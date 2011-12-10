@@ -1,0 +1,11 @@
+
+/* 
+ * Ejemplo de recuperación de errores léxicos para el caso
+ * de reales inválidos. Se considera como valor léxico la primera
+ * cadena de dígitos encontrada, y el resto se descarta.
+ */
+
+start: function {
+	num: real = 13.2z;
+		
+}

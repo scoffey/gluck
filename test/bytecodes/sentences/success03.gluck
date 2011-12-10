@@ -1,0 +1,11 @@
+location sentences;
+use system.io;
+
+start:function {
+
+	a:int[] = {1, 2.0, 3.0, 100};
+		
+	for x in a loop {
+		print(x);
+	}
+}

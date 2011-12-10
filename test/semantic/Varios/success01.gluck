@@ -1,0 +1,23 @@
+
+use constraints;	// modulo donde se define la restriccion positive
+
+initialized:constraint x:int {
+	x != 0
+}
+
+result:type {
+	success: bool,
+	msg: string
+}
+
+function1:function param1:int positive, param2:real -> result:result {
+	var1:int = 10;
+	function2();
+	result{success, msg} = {false, param2 + param1};
+}
+
+function2:function -> result:result {
+	var1:int positive;
+	result{success, msg} = {true, "Hola Mundo"};
+	var1 = 21;
+}

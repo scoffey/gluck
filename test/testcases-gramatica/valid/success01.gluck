@@ -1,0 +1,13 @@
+/*
+No lo incluimos porque no existe
+use system.io; */
+
+start: function {
+	/* Invoco con una cadena vacia porque el test no puede arrojar salida */
+	print("");
+	
+	int1: int;
+	if/*comentario*/true/*comentario*/then {
+		int1 = 0;
+	}
+}

@@ -1,0 +1,8 @@
+/*
+ * Declaracion simple de variables sin error fuera de una funcion.
+ * Deberian tener alcance a nivel modulo.
+ */
+var1: int;
+var2: bool;
+var3: real;
+var4: string;

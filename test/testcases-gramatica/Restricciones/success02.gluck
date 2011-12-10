@@ -1,0 +1,11 @@
+/*
+ * Restriccion que debe generar un error
+ */
+ 
+fn:function in1:int positive {
+	b:int positive;
+	b=in1;
+	b=-5; 
+}
+
+positive:constraint x:int { x > 0 }

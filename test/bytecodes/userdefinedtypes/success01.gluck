@@ -1,0 +1,13 @@
+location userdefinedtypes;
+use system.io;
+
+pair:type{
+	x:int, y:int
+}
+
+start:function{
+	var: pair;
+	var{x} = 2;
+	
+	print(var{x});
+}

@@ -1,0 +1,13 @@
+location stdlib;
+use system.io;
+
+start:function {
+	handler: int = open("stdlib/success02.data");
+	writeLine(handler, "hola");
+	writeLine(handler, "mundo");
+	close(handler);
+	handler = open("stdlib/success02.data");
+	print(readLine(handler));
+	print(readLine(handler));
+	close(handler);
+}

@@ -1,0 +1,5 @@
+positive1:constraint x:int {
+positive2:constraint x:int {
+x==5
+}
+}

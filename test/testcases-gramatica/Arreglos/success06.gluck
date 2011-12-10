@@ -1,0 +1,3 @@
+start:function{
+print(a[0]);
+}

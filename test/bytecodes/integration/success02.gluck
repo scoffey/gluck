@@ -1,0 +1,43 @@
+location integration;
+use system.io;
+
+// Main program
+start:function {
+	cel2fahr_table(0, 300, 20);
+	print(" ");
+	fahr2cel_table(0, 300, 20);
+}
+
+// Prints the Celsius-to-Fahrenheit table 
+cel2fahr_table:function lower:real, upper:real, step:real {
+	i:real = lower;
+	print("Celsius");
+	print("Fahrenheit"); // 451 :)
+	while i < upper loop {
+		print(i);
+		print(cel2fahr(i));
+		i = i + step;
+	}
+}
+
+// Prints the Fahrenheit-to-Celsius table 
+fahr2cel_table:function lower:real, upper:real, step:real {
+	i:real = lower;
+	print("Fahrenheit"); // 451 :)
+	print("Celsius");
+	while i < upper loop {
+		print(i);
+		print(fahr2cel(i));
+		i = i + step;
+	}
+}
+
+// Converts temperature degrees from Celsius to Fahrenheit 
+cel2fahr:function cel:real -> fahr:real {
+	fahr = (5.0 / 9.0) * (cel - 32.0);
+}
+
+// Converts temperature degrees from Celsius to Fahrenheit 
+fahr2cel:function fahr:real -> cel:real {
+	cel = ((9.0 / 5.0) * fahr) + 32.0;
+}

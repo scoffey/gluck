@@ -1,0 +1,12 @@
+/*
+ * Tipos de datos definidos por el usuario.
+ * No se pueden definir dentro de una funcion.
+ */
+start: function {
+	composite:type {
+		x:int,
+		y:int,
+		z:int,
+		parent: composite
+	}
+}

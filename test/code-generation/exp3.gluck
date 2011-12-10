@@ -1,0 +1,19 @@
+use system.io;
+
+point:type {
+	x:int,
+	y:int
+}
+
+start:function {
+	
+	for x in fn1(8.3) loop {
+		print( x{x} + x{y} );
+	}
+}
+
+
+fn1:function input:int -> out:point[] {
+	out[0]{x, y} = {input, input * 2};
+	out[1]{x, y} = {input+1, input * 3};
+}

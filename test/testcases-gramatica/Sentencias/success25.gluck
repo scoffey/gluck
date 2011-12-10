@@ -1,0 +1,3 @@
+start:function{
+for a in 5+5 loop {for a in 5+5 loop {} ifquit{}} ifquit{for a in 5+5 loop {} ifquit{}}
+}

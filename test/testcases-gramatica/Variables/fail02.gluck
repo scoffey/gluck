@@ -1,0 +1,7 @@
+/*
+ * Declaracion simple de variables con error.
+ * Los nombres de las variables no pueden empezar con '_'
+ */
+start: function {
+	_1: int;
+}

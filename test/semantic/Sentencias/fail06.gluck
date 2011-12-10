@@ -1,0 +1,4 @@
+start:function {
+	x:int;
+	y:int = x; // error: x no inicializada
+}

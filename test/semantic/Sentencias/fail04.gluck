@@ -1,0 +1,11 @@
+start:function {
+	n:int;
+	n = 1;
+	f1(n);
+}
+
+f1:function i1:int -> o1:int {
+	m:int;
+	//m = 456;
+	o1 = m;
+}

@@ -1,0 +1,17 @@
+location arrays;
+use system.io;
+
+start:function{
+	var:int[5];
+	var[0] = 10;
+	var[1] = 1;
+	var[2] = 2;
+	var[3] = 3;
+	var[4] = 4;
+
+	print(var[0]);
+	print(var[1]);
+	print(var[2]);
+	print(var[3]);
+	print(var[4]);
+}

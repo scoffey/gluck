@@ -1,0 +1,6 @@
+start: function {
+	i:int = 0;
+	a:int[] = {10};
+	
+	b:int = a[i];
+}

@@ -1,0 +1,27 @@
+
+use system.io;
+
+start:function {
+	a:int = 0;
+	b:int;
+	c:int;
+
+	while a < 10 loop {
+		until a == 20 loop {
+			quit;
+			a = a + 1;
+		}
+		ifnever {
+			b = 90;
+			quit;	
+		}
+		ifquit {
+			c = 45;
+			quit;
+		}
+	}
+	ifquit {
+		print("Estamos en el ifquit del while.");
+	}
+	
+}
